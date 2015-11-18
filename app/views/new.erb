@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Television Shows</title>
+  </head>
+
+  <body>
+    <h1>Add Show Details</h1>
+
+    <%= @error %>
+    <br>
+    <br>
+    <br>
+    <form action="/television_shows/new" method="post">
+      <label for="Title">Title of Show</label>
+      <input type="text" id="Title" name="title">
+      <label for="Network">Network</label>
+      <input type="text" id="Network" name="network">
+      <label for="Starting Year">Starting Year of Show</label>
+      <input type="text" id="Starting Year" name="starting_year">
+      <label for="Synopsis">Synopsis of Show</label>
+      <input type="text" id="Synopsis" name="synopsis">
+      <select name="genre" id="Genre">
+        <option value="Action">Action</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Drama">Drama</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Fantasy">Fantasy</option>
+      </select>
+
+      <input type="submit" value="Add TV Show">
+    </form>
+
+
+  </body>
+
+</html>

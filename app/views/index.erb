@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Television Shows</title>
+  </head>
+
+  <body>
+    <h1>List of Shows</h1>
+      <ul>
+        <% @all_shows.each do |show| %>
+            <li><%= "#{show.title} (#{show.network})" %></li>
+        <% end %>
+      </ul>
+  </body>
+
+</html>
